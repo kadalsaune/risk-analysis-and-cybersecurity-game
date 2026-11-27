@@ -519,7 +519,7 @@ function render(): void {
     simulation: renderSimulation,
     results: renderResults,
   }[state.phase]()
-  app!.innerHTML = content
+  app!.innerHTML = `${content}<footer class="site-footer"><p>Nettsiden er laget med hjelp av kunstig intelligens (KI).</p></footer>`
 }
 
 function clearTimer(): void {
